@@ -1,0 +1,275 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyOdM8fFLR38cbVzNkO1IHwg",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/SR12007/Git/blob/main/arrays%20fds\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": 3,
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "jxxT_8MF3cGA",
+        "outputId": "a7883f8d-3fb3-4af0-9ece-2c4019b0b0a2"
+      },
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "[1 2 3 4]\n"
+          ]
+        }
+      ],
+      "source": [
+        "import numpy as np\n",
+        "a=np.array([1,2,3,4])\n",
+        "print(a)"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "import numpy as np\n",
+        "a=np.array([[1,2,3], [4,5,6]])\n",
+        "print(a.ndim)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "Tepo-cqZ4zNI",
+        "outputId": "37d1dfb6-0e25-4921-b174-4493ac90e673"
+      },
+      "execution_count": 5,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "2\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "import numpy as np\n",
+        "a=np.array([(1,2,3),(4,5,6)])\n",
+        "print(a)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "PkYH-0xU5Xkk",
+        "outputId": "7774d544-43d6-4b3e-956b-e7272c9368a0"
+      },
+      "execution_count": 6,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "[[1 2 3]\n",
+            " [4 5 6]]\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "import numpy as np\n",
+        "a=np.array([1,2,3])\n",
+        "print (a.itemsize)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "MiwMjcc15yij",
+        "outputId": "60583f35-8734-4178-89ae-76b6dd91d045"
+      },
+      "execution_count": 7,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "8\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "import numpy as np\n",
+        "a=np.array([(1,2,3)])\n",
+        "print(a.dtype)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "FpE6Djkb69MT",
+        "outputId": "b886a471-2304-446f-e7ee-ce1391a6ac33"
+      },
+      "execution_count": 8,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "int64\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "import numpy as np\n",
+        "a = np.array([(1,2,3,4,5,6)])\n",
+        "print(a.size)\n",
+        "print(a.shape)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "IAY-pHMq7WPx",
+        "outputId": "f6834abb-4def-4897-a01f-6f2a4e658db2"
+      },
+      "execution_count": 9,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "6\n",
+            "(1, 6)\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "X=np.array([(1,2,3),(3,4,5)])\n",
+        "Y=np.array([(1,2,3),(3,4,5)])\n",
+        "print(X+Y)\n",
+        "print(X-Y)\n",
+        "print(X*Y)\n",
+        "print(X/Y)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "k6FfZkmX8N4Y",
+        "outputId": "dec6f50f-82a1-409d-ee3d-b7479c32cc7b"
+      },
+      "execution_count": 10,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "[[ 2  4  6]\n",
+            " [ 6  8 10]]\n",
+            "[[0 0 0]\n",
+            " [0 0 0]]\n",
+            "[[ 1  4  9]\n",
+            " [ 9 16 25]]\n",
+            "[[1. 1. 1.]\n",
+            " [1. 1. 1.]]\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "import numpy as np\n",
+        "a = np.array([(1,2,3),(3,4,5)])\n",
+        "print(np.sqrt(a))"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "44sK7sx69Cfm",
+        "outputId": "85cdf2f5-357e-481b-8088-a6eefb8b4f38"
+      },
+      "execution_count": 12,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "[[1.         1.41421356 1.73205081]\n",
+            " [1.73205081 2.         2.23606798]]\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "import numpy as np\n",
+        "X = [6,7,9,10]\n",
+        "print(\"x =\", X)\n",
+        "print(\"ln(x) =\", np.log(X))\n",
+        "print(\"log2(x) =\", np.log2(X))\n",
+        "print(\"log10(x) =\", np.log10(X))"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "0JhFix9o9nQV",
+        "outputId": "75706121-35ec-4b75-d602-4a094fe898b9"
+      },
+      "execution_count": 14,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "x = [6, 7, 9, 10]\n",
+            "ln(x) = [1.79175947 1.94591015 2.19722458 2.30258509]\n",
+            "log2(x) = [2.5849625  2.80735492 3.169925   3.32192809]\n",
+            "log10(x) = [0.77815125 0.84509804 0.95424251 1.        ]\n"
+          ]
+        }
+      ]
+    }
+  ]
+}
